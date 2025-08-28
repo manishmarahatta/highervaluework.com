@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Staying Relevant in the Age of AI — One‑Page Framework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" 
+rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --muted: #666666;
+      --line: #e9e9e9;
+      --maxw: 1120px;
+      --pad: 28px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe 
+UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+    }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 10vh 
+var(--pad) 16vh; }
+    header h1 { font-weight: 800; letter-spacing: -0.02em; line-height: 
+1.05; margin: 0; font-size: clamp(36px, 6vw, 72px); }
+    header p { margin: 12px 0 0; color: var(--muted); font-size: 
+clamp(16px, 2.1vw, 20px); max-width: 52ch; }
+    .divider { height: 1px; background: var(--line); margin: 64px 0; }
+
+    h2 { font-size: clamp(22px, 2.8vw, 30px); margin: 0; letter-spacing: 
+-0.01em; }
+    .lede { color: var(--muted); max-width: 60ch; margin-top: 10px; }
+
+    /* Value Ladder Table */
+    .table-wrap { overflow: auto; border: 1px solid var(--line); 
+border-radius: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    thead th { text-align: left; font-weight: 600; color: #222; padding: 
+16px 18px; background: #fafafa; border-bottom: 1px solid var(--line); }
+    tbody td { padding: 14px 18px; vertical-align: top; }
+    tbody tr + tr td { border-top: 1px solid var(--line); }
+    .badge { display: inline-block; font-size: 12px; padding: 3px 8px; 
+border: 1px solid var(--fg); border-radius: 999px; letter-spacing: 0.02em; 
+}
+
+    /* Three Columns */
+    .grid-3 { display: grid; gap: 18px; grid-template-columns: 1fr; 
+margin-top: 22px; }
+    @media (min-width: 860px) { .grid-3 { grid-template-columns: repeat(3, 
+1fr); } }
+    .card { border: 1px solid var(--line); border-radius: 14px; padding: 
+18px; }
+    .card h3 { margin: 2px 0 8px; font-size: 18px; letter-spacing: 
+-0.01em; }
+    .card p { margin: 0; color: var(--muted); }
+    .list { margin: 10px 0 0; padding-left: 18px; color: #222; }
+    .list li { margin: 6px 0; }
+
+    /* Pyramid */
+    .pyramid { margin-top: 26px; display: grid; gap: 12px; }
+    .tier { position: relative; border: 1px solid var(--fg); 
+border-radius: 10px; padding: 16px 18px; background: #fff; }
+    .tier small { color: var(--muted); display: block; margin-top: 4px; }
+    .t1 { width: 100%; margin: 0 auto; }
+    .t2 { width: 72%; margin: 0 auto; }
+    .t3 { width: 44%; margin: 0 auto; }
+
+    /* Old vs New Moat */
+    .grid-2 { display: grid; gap: 18px; grid-template-columns: 1fr; 
+margin-top: 22px; }
+    @media (min-width: 860px) { .grid-2 { grid-template-columns: repeat(2, 
+1fr); } }
+    .col { border: 1px solid var(--line); border-radius: 14px; padding: 
+18px; }
+    .col h4 { margin: 2px 0 10px; font-size: 16px; letter-spacing: 0.01em; 
+text-transform: uppercase; color: #222; }
+    .col ul { margin: 10px 0 0; padding-left: 18px; }
+    .col li { margin: 6px 0; }
+
+    /* Subtle Reveal */
+    .reveal { opacity: 0; transform: translateY(8px); transition: opacity 
+.6s ease, transform .6s ease; }
+    .reveal.show { opacity: 1; transform: none; }
+
+    footer { color: var(--muted); margin-top: 72px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="reveal">
+      <h1>Staying Relevant in the Age of AI</h1>
+      <p>From <strong>replaceable execution</strong> → to 
+<strong>irreplaceable value creation</strong>. A minimal one‑page 
+blueprint to move up the value ladder.</p>
+    </header>
+
+    <div class="divider reveal"></div>
+
+    <section class="reveal">
+      <h2>1 · Work Value Ladder</h2>
+      <p class="lede">Stop competing on output volume. Climb toward 
+judgment, synthesis and creative direction.</p>
+      <div class="table-wrap" style="margin-top:16px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Work Type</th>
+              <th>Automation Risk</th>
+              <th>Human Differentiation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge">Repetitive & 
+Rule‑Based</span><br/>Data entry, basic QA, simple coding, scheduling</td>
+              <td>Very High — AI handles these better, faster, 
+cheaper</td>
+              <td>Minimal leverage — delegate to AI, reclaim time</td>
+            </tr>
+            <tr>
+              <td><span class="badge">Complex 
+Execution</span><br/>Mid‑level engineering, basic analytics, support</td>
+              <td>Moderate — AI assists, partial replacement over 
+time</td>
+              <td>Use AI to accelerate; spend time on decisions & 
+architecture</td>
+            </tr>
+            <tr>
+              <td><span class="badge">High‑Value Work</span><br/>Strategy, 
+innovation, leadership, creative synthesis</td>
+              <td>Low — requires judgment, context, relationships, 
+creativity</td>
+              <td>Core human advantage — cultivate and protect this 
+layer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="divider reveal"></div>
+
+    <section class="reveal">
+      <h2>2 · Value Amplification Framework</h2>
+      <p class="lede">Use AI as a force multiplier. Delegate down, operate 
+across, and play above.</p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Automate the Commodity</h3>
+          <p>Offload repeatable workflows to AI & no‑code so you regain 
+cognitive bandwidth.</p>
+          <ul class="list">
+            <li>Code scaffolding with AI → focus on system design</li>
+            <li>Automated reporting → focus on interpretation</li>
+            <li>Workflow macros → remove busywork</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Build Meta‑Skills</h3>
+          <p>Operate across domains and translate AI outputs into business 
+outcomes.</p>
+          <ul class="list">
+            <li>Systems thinking & product sense</li>
+            <li>AI fluency & data literacy</li>
+            <li>Storytelling, influence, and ethics</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Move into Judgment Work</h3>
+          <p>Lead where trust, ambiguity, and context matter most.</p>
+          <ul class="list">
+            <li>Vision, strategy, creative direction</li>
+            <li>Negotiation & partnerships</li>
+            <li>Governance, risk, and sensitive decisions</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider reveal"></div>
+
+    <section class="reveal">
+      <h2>3 · The AI Value Pyramid</h2>
+      <p class="lede">Stand on the foundation, don’t fight it. Design 
+<em>why</em> and <em>how</em> — not just <em>what</em>.</p>
+      <div class="pyramid" aria-label="AI Value Pyramid">
+        <div class="tier t3">
+          <strong>Top — Judgment Work</strong>
+          <small>Vision • Context • Ethics • Differentiation</small>
+        </div>
+        <div class="tier t2">
+          <strong>Middle — Orchestration</strong>
+          <small>Humans design how AI does the work</small>
+        </div>
+        <div class="tier t1">
+          <strong>Base — Execution</strong>
+          <small>AI replaces doing; humans specify outcomes</small>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider reveal"></div>
+
+    <section class="reveal">
+      <h2>4 · Rethink Career Moats</h2>
+      <p class="lede">Protect value, not roles. Build moats AI can’t 
+cross.</p>
+      <div class="grid-2">
+        <div class="col">
+          <h4>Old Moats</h4>
+          <ul>
+            <li>Certifications & degrees</li>
+            <li>Years of experience</li>
+            <li>Owning information</li>
+            <li>Knowing the tools</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>New Moats</h4>
+          <ul>
+            <li>Cross‑domain problem solving</li>
+            <li>Learning velocity & adaptation</li>
+            <li>Synthesis of abundant information</li>
+            <li>Designing better questions & decisions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider reveal"></div>
+
+    <section class="reveal">
+      <h2>5 · Action Playbook</h2>
+      <p class="lede">Position yourself as an AI‑native leader companies 
+fight to retain.</p>
+      <div class="grid-2">
+        <div class="col">
+          <ul>
+            <li><strong>Upskill relentlessly:</strong> prompt chains, 
+multi‑agent workflows, AI‑first product design</li>
+            <li><strong>Own the narrative:</strong> show cost reduction, 
+revenue lift, or IP creation via AI</li>
+            <li><strong>Build a portfolio:</strong> ship experiments, 
+prototypes, internal tools</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><strong>Become the bridge:</strong> translate AI 
+capability → business outcomes</li>
+            <li><strong>Codify judgment:</strong> principles, guardrails, 
+escalation criteria</li>
+            <li><strong>Measure impact:</strong> time saved, accuracy 
+gains, unit economics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal">Be the architect, not the bricklayer.</footer>
+  </main>
+
+  <script>
+    // Subtle scroll‑in reveal (no buttons, no controls)
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) 
+e.target.classList.add('show'); })
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
+
